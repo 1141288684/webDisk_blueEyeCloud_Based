@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FilePageItem"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:longClickable="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/file_page_item"
+    android:orientation="horizontal">
+    <Space
+        android:layout_width="18dp"
+        android:layout_height="match_parent"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/filePageIcon"
+        android:src="@drawable/dir_icon"/>
+    <Space
+        android:layout_width="18dp"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:id="@+id/filePageName"
+        android:text="@string/file_name"
+        android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/filePageDate"
+                android:text="@string/file_date"
+                android:layout_weight="2"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/filePageSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

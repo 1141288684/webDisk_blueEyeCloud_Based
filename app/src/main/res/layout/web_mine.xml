@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.header.BezierCircleHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center|start"
+                    android:id="@+id/mineId"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="20sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/BayWharf"/>
+                <TextView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center|start"
+                    android:id="@+id/mineDownDir"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="20sp"
+                    android:background="?attr/selectableItemBackground"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/BayWharf"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/hidden"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp">
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_gravity="center"
+                        android:layout_width="330dp"
+                        android:theme="@style/Theme.MaterialComponents.BottomSheetDialog"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        app:cardCornerRadius="20sp"
+                        app:cardElevation="20sp"
+                        android:layout_height="240dp">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:id="@+id/mi_old_psw"
+                                    android:inputType="textPassword"
+                                    android:hint="@string/olePassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:autofillHints="">
+                                </EditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:id="@+id/mi_new_psw"
+                                    android:hint="@string/newPassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:autofillHints=""
+                                    android:inputType="textPassword">
+                                </EditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:id="@+id/mi_new_es_psw"
+                                    android:hint="@string/ensurePassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="textPassword"
+                                    android:autofillHints="">
+                                </EditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/mi_btn_psw"
+                                android:elevation="20sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/editPassword"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mi_lay"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Peace">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/mtv"
+                        android:src="@drawable/ic_pulloff" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

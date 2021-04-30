@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.header.BezierCircleHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fileRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:overScrollMode="never"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFilePlus"
+        android:layout_marginBottom="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        app:fabSize="mini"
+        android:src="@drawable/ic_plus"
+        android:clickable="true"
+        android:focusable="true"
+        android:backgroundTint="@color/FrenchSkyBlue"/>
+    <FrameLayout
+        android:id="@+id/plusFrameTab"
+        android:visibility="gone"
+        android:background="@color/cityLights"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/plusTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_file_directory"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="新建文件夹"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_block_send"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="上传文件"/>
+        </com.google.android.material.tabs.TabLayout>
+    </FrameLayout>
+
+</FrameLayout>

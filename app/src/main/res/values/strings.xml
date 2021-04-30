@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">盖亚云盘</string>
+    <string name="click_to_skip">跳过</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="ensurePassword">确认密码</string>
+    <string name="olePassword">旧密码</string>
+    <string name="newPassword">新密码</string>
+    <string name="editPassword">修改密码</string>
+    <string name="register">现在注册</string>
+
+    <string name="mine">我的</string>
+    <string name="home">首页</string>
+    <string name="disk">云盘</string>
+    <string name="autoLogin">自动登录</string>
+    <string name="download">下载</string>
+    <string name="upload">上传</string>
+
+    <string name="file_name">file_name</string>
+    <string name="file_date">date</string>
+    <string name="deleteFileOrDir">删除文件(夹)</string>
+    <string name="downloadFile">下载文件</string>
+    <string name="renameFile">重命名</string>
+
+    <string name="newDown">最近下载</string>
+    <string name="newUp">最近添加</string>
+</resources>

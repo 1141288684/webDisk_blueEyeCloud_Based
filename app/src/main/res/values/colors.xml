@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#70a1ff</color>
+    
+    <color name="white">#ffffff</color>
+    <color name="AntFlashWhite">#f1f2f6</color>
+    <color name="cityLights">#dfe4ea</color>
+    <color name="TwinkleBlue">#ced6e0</color>
+    <color name="SaturatedSky">#5352ed</color>
+    <color name="BrightGreek">#3742fa</color>
+    <color name="FrenchSkyBlue">#70a1ff</color>
+    <color name="ClearChill">#1e90ff</color>
+    <color name="LimeSoap">#7bed9f</color>
+    <color name="UFOGreen">#2ed573</color>
+    <color name="Peace">#a4b0be</color>
+    <color name="BayWharf">#747d8c</color>
+    <color name="Grisaille">#57606f</color>
+    <color name="PrestigeBlue">#2f3542</color>
+    <color name="WildWaterMelon">#ff6b81</color>
+    <color name="WaterMelon">#ff4757</color>
+    <color name="Coral">#ff7f50</color>
+    <color name="BruschettaTamato">#ff6348</color>
+    <color name="Orange">#ffa502</color>
+    <color name="GoldenSand">#eccc68</color>
+</resources>

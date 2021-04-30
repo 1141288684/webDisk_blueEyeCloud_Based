@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Peace"
+    tools:context=".main.DiskActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_gravity="bottom"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_air"
+                        android:scaleType="fitCenter"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:id="@+id/filePageDir"/>
+
+                </LinearLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="70dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/currentDir"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="根目录"/>
+        </FrameLayout>
+
+
+
+        </FrameLayout>
+<!--        <androidx.viewpager.widget.ViewPager-->
+<!--            android:id="@+id/viewPagerMain"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"/>-->
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_disk"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            app:tabIndicatorColor="@null"
+            app:tabBackground="@color/white"
+            android:id="@+id/tab_disk"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_home"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:text="@string/home"
+                android:icon="@drawable/ic_home_selector"/>
+
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_webDisk"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:icon="@drawable/ic_cloud_selector"
+                android:text="@string/disk"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_download"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:icon="@drawable/ic_download_selector"
+                android:text="@string/download"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:icon="@drawable/ic_upload_selector"
+                android:text="@string/upload"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:icon="@drawable/ic_account_selector"
+                android:text="@string/mine"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
